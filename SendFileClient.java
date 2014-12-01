@@ -7,13 +7,9 @@ import java.net.Socket;
 public class SendFileClient {
 
 	private static final String SERVERIP = "172.0.0.1";
-	private static final int SERVERPORT = 2234;
-	private static final int CLIENTPORT = 5432;
-	
-	
-	/**
-	 * @param args
-	 */
+	private static final int SERVERPORT = 32341;
+	private static final int CLIENTPORT = 54321;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -32,7 +28,7 @@ public class SendFileClient {
 			System.out.println(fileName);
 			
 			//接收传输来的文件
-			FileOutputStream fos = new FileOutputStream("D:\\"+"receive1.txt");
+			FileOutputStream fos = new FileOutputStream("in.txt");
 			int data;
 			while(-1!=(data = is.read()))
 			{

@@ -33,13 +33,11 @@ public class SendFileClient {
 			while(-1!=(data = is.read()))
 			{
 				fos.write(data);
-//				System.out.println((char)data);
 			}
 			is.close();
 			s.close();
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
